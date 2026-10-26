@@ -125,7 +125,8 @@ footer {
 .btn.btn-primary { background: var(--text); color: var(--bg); }
 .btn.btn-secondary { background: transparent; color: var(--text); border: 1px solid var(--border); }
 
-.btn:hover { opacity: 0.8; }
+.btn.btn-primary:hover { background: #000; }
+.btn.btn-secondary:hover { background: var(--text); color: var(--bg); }
 
 .btn:focus-visible {
   outline: 2px solid var(--text);
