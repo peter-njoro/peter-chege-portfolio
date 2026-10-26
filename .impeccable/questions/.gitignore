@@ -1,0 +1,6 @@
+# Keep local question state out of Git while retaining the direction record.
+*
+!.gitignore
+!roll.json
+!seeds/
+!seeds/*.json
