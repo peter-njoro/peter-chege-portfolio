@@ -171,7 +171,6 @@ p { margin-bottom: 12px; color: var(--text-secondary); }
 }
 
 .project-card {
-  border: 1px solid var(--border);
   padding: var(--box-padding);
   display: flex;
   flex-direction: column;
