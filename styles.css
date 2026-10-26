@@ -193,7 +193,7 @@ p { margin-bottom: 12px; color: var(--text-secondary); }
 
 .card-links .btn { flex: 1; text-align: center; }
 
-.project-grid { display: flex; flex-wrap: wrap; gap: 24px; }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(var(--card-min-width), 1fr)); gap: 24px; }
 
 .hero { margin-bottom: 32px; }
 
