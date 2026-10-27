@@ -26,7 +26,7 @@
 window.SITE = {
   name: "Peter Njoroge Chege",
   tagline: "ML engineer. I build systems and test whether they hold up.",
-  intro: "Computer science graduate in Kenya. I work on computer vision, deployment and data analysis with Python, Docker and AWS.",
+  intro: "I'm a computer science graduate in Kenya working across computer vision, deployment and data analysis with Python, Docker and AWS. Take a look around, and get in touch if you'd like to work together.",
   location: "Kenya",
   email: "peterchegen12@gmail.com",
   links: {
@@ -44,8 +44,8 @@ window.SITE = {
     photo: { src: "", alt: "" }
   },
   resumes: [
-    { label: "ML Engineer CV", file: "files/cv-ml.pdf" },
-    { label: "Data Science CV", file: "files/cv-ds.pdf" }
+    { label: "ML Engineer CV", file: "files/cv-ml.pdf", available: false },
+    { label: "Data Science CV", file: "files/cv-ds.pdf", available: false }
   ],
   projects: [
     {

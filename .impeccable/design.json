@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-26T23:42:28+03:00",
+  "title": "Design System: Peter Njoroge Chege portfolio",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#fff",
+        "tonalRamp": ["#262626", "#404040", "#595959", "#737373", "#8c8c8c", "#a6a6a6", "#bfbfbf", "#f2f2f2"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#111",
+        "tonalRamp": ["#262626", "#404040", "#595959", "#737373", "#8c8c8c", "#a6a6a6", "#bfbfbf", "#f2f2f2"]
+      },
+      "charcoal": {
+        "role": "neutral",
+        "displayName": "Charcoal",
+        "canonical": "#333",
+        "tonalRamp": ["#262626", "#404040", "#595959", "#737373", "#8c8c8c", "#a6a6a6", "#bfbfbf", "#f2f2f2"]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted gray",
+        "canonical": "#555",
+        "tonalRamp": ["#262626", "#404040", "#595959", "#737373", "#8c8c8c", "#a6a6a6", "#bfbfbf", "#f2f2f2"]
+      },
+      "soft-line": {
+        "role": "neutral",
+        "displayName": "Soft gray line",
+        "canonical": "#ddd",
+        "tonalRamp": ["#262626", "#404040", "#595959", "#737373", "#8c8c8c", "#a6a6a6", "#bfbfbf", "#f2f2f2"]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Pale gray surface",
+        "canonical": "#f6f6f6",
+        "tonalRamp": ["#262626", "#404040", "#595959", "#737373", "#8c8c8c", "#a6a6a6", "#bfbfbf", "#f2f2f2"]
+      }
+    },
+    "typographyMeta": {
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+      "weights": [400, 700],
+      "display": {
+        "displayName": "Page heading",
+        "purpose": "Primary page heading; the mobile size is 28px."
+      },
+      "headline": {
+        "displayName": "Section heading",
+        "purpose": "Second-level headings and section titles."
+      },
+      "title": {
+        "displayName": "Item title",
+        "purpose": "Project-card, row, and third-level headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default reading text and button labels."
+      },
+      "label": {
+        "displayName": "Small text",
+        "purpose": "Supporting text; metadata is a smaller 13px size."
+      }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": [
+      {
+        "name": "mobile-max",
+        "value": "600px"
+      },
+      {
+        "name": "tablet-max",
+        "value": "900px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Dark bordered action with a reversible light hover state and visible keyboard focus.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Continue</a>",
+      "css": ".ds-btn-primary { display: inline-flex; min-height: 44px; align-items: center; justify-content: center; padding: 10px 20px; border: 1px solid var(--line); background: var(--text); color: var(--bg); font-size: var(--body); line-height: var(--lh-heading); text-align: center; text-decoration: none; cursor: pointer; } .ds-btn-primary:hover { background: var(--bg); color: var(--text); } .ds-btn-primary:focus-visible { outline: 3px solid var(--text); outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Light bordered action that reverses to the dark fill on hover.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#\">More information</a>",
+      "css": ".ds-btn-secondary { display: inline-flex; min-height: 44px; align-items: center; justify-content: center; padding: 10px 20px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font-size: var(--body); line-height: var(--lh-heading); text-align: center; text-decoration: none; cursor: pointer; } .ds-btn-secondary:hover { background: var(--text); color: var(--bg); } .ds-btn-secondary:focus-visible { outline: 3px solid var(--text); outline-offset: 2px; }"
+    },
+    {
+      "name": "Disabled Button",
+      "kind": "button",
+      "refersTo": "button-disabled",
+      "description": "Unavailable action with a softened border and muted text.",
+      "html": "<button class=\"ds-btn-disabled\" type=\"button\" disabled>Not available yet</button>",
+      "css": ".ds-btn-disabled { min-height: 44px; padding: 10px 20px; border: 1px solid var(--line-soft); background: var(--bg); color: var(--text-3); font-size: var(--body); line-height: var(--lh-heading); cursor: not-allowed; } .ds-btn-disabled:hover { background: var(--bg); color: var(--text-3); }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "c-header",
+      "description": "Document header with a bold site name and wrapping menu links.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Projects</a><a href=\"#\">About</a><a href=\"#\">Resume</a></nav>",
+      "css": ".ds-nav { display: flex; flex-wrap: wrap; gap: 24px; } .ds-nav a { display: inline-flex; min-height: 44px; align-items: center; color: var(--text); font-size: 15px; text-decoration: none; } .ds-nav a[aria-current=\"page\"] { font-weight: 700; text-decoration: underline; } .ds-nav a:focus-visible { outline: 3px solid var(--text); outline-offset: 2px; }"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "project-card",
+      "description": "Square, bordered project summary with a pale hover surface.",
+      "html": "<article class=\"ds-project-card\"><h3>Project title</h3><p class=\"ds-project-card-summary\">Short summary goes here.</p><p class=\"ds-project-card-tags\">Python, Docker</p><a class=\"ds-project-card-link\" href=\"#\">View details</a></article>",
+      "css": ".ds-project-card { min-width: 0; padding: 20px; border: 1px solid var(--line); background: var(--bg); color: var(--text); } .ds-project-card:hover, .ds-project-card:focus-within { background: var(--surface); } .ds-project-card h3 { margin: 0 0 8px; font-size: var(--h3); font-weight: 700; line-height: var(--lh-heading); } .ds-project-card-summary { margin: 0 0 12px; color: var(--text-2); } .ds-project-card-tags { margin: 0 0 12px; color: var(--text-3); font-size: var(--meta); } .ds-project-card-link { display: inline-flex; min-height: 44px; align-items: center; color: var(--text); text-underline-offset: 2px; } .ds-project-card-link:focus-visible { outline: 3px solid var(--text); outline-offset: 2px; }"
+    },
+    {
+      "name": "Empty Image Slot",
+      "kind": "custom",
+      "description": "Dashed placeholder that reserves the image's intended 16:9 geometry.",
+      "html": "<div class=\"ds-image-slot\" role=\"img\" aria-label=\"Image goes here (16:9)\">Image goes here (16:9)</div>",
+      "css": ".ds-image-slot { display: flex; width: 100%; aspect-ratio: 16 / 9; align-items: center; justify-content: center; border: 1px dashed var(--line); background: var(--surface); color: var(--text-3); font-size: var(--small); text-align: center; }"
+    },
+    {
+      "name": "Metric Callout",
+      "kind": "custom",
+      "description": "A bordered metric block with a bold value and smaller caption.",
+      "html": "<div class=\"ds-metric\"><span class=\"ds-metric-value\">24</span><span class=\"ds-metric-caption\">Metric caption</span></div>",
+      "css": ".ds-metric { min-width: 0; padding: 16px; border: 1px solid var(--line); } .ds-metric-value { display: block; font-size: 32px; font-weight: 700; line-height: var(--lh-h1); } .ds-metric-caption { display: block; margin-top: 8px; color: var(--text-2); font-size: var(--small); }"
+    },
+    {
+      "name": "Embed Frame",
+      "kind": "custom",
+      "description": "A bordered 16:9 project frame with a taller minimum on mobile.",
+      "html": "<div class=\"ds-embed-frame\">Embedded project goes here (16:9)</div>",
+      "css": ".ds-embed-frame { display: flex; width: 100%; aspect-ratio: 16 / 9; align-items: center; justify-content: center; border: 1px solid var(--line); background: var(--surface); color: var(--text-3); font-size: var(--small); text-align: center; } @media (max-width: 600px) { .ds-embed-frame { min-height: 400px; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Working Technical Document",
+    "overview": "The portfolio reads like a well-formatted technical document: direct, legible, and organized by headings, text, lists, and fine borders. Its monochrome treatment keeps attention on engineering work; typography, spacing, and structure provide hierarchy rather than decorative chrome.\n\nThe page frame stays single-column. Grids appear where the shipped pages need them, notably for project cards, case-study galleries, and metrics. The visual language is quiet and square-edged, with reversible hover treatments and a visible keyboard-focus outline. This direction supports the product's friendly, direct voice without adding a separate visual identity.",
+    "keyCharacteristics": [
+      "Monochrome, document-like hierarchy.",
+      "Square forms, one-pixel borders, and restrained gray surfaces.",
+      "Responsive, content-led grids rather than a multi-column page frame."
+    ],
+    "rules": [
+      {
+        "name": "The Monochrome Document Rule",
+        "body": "Keep hierarchy in the neutral palette; let type, spacing, borders, and surface contrast do the organizing.",
+        "section": "colors"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Keep components unraised; use the existing border and neutral surface changes for structure and hover feedback.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Responsive Document Frame Rule",
+        "body": "Keep the page frame single-column; let the project, gallery, and metric grids respond within it.",
+        "section": "layout"
+      }
+    ],
+    "dos": [
+      "Do keep the palette monochrome and let type, spacing, and borders create hierarchy.",
+      "Do retain the responsive project-card and gallery grids, and the embed's mobile minimum height.",
+      "Do preserve the visible focus outline, 44px control targets, placeholder dimensions, and black-on-white print treatment.",
+      "Do use square corners, thin borders, and reversible hover treatments."
+    ],
+    "donts": [
+      "Don't add decorative chrome, accent colors, shadows, or motion transitions to this document-like system.",
+      "Don't turn the single-column page frame into a multi-column shell.",
+      "Don't remove the mobile breakpoints or allow empty image slots to collapse."
+    ]
+  }
+}

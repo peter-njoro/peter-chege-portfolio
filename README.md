@@ -6,6 +6,8 @@ A simple, fast, static portfolio site for an early-career ML engineer in Kenya. 
 
 Double-click `index.html`. No local server is needed.
 
+Open `design-preview.html` for the component guide. Responsive captures are in `screenshots/`.
+
 The site reads all content from `content/content.js`. Open your browser console to see validation warnings (missing fields, missing alt text, TODO values). These are warnings only and never break the page.
 
 ## How to update
@@ -30,7 +32,8 @@ Change any string value in `content/content.js` (name, tagline, intro, about tex
 ### Replace a CV
 - Place PDF files in `files/`.
 - Update the `file` path in the `resumes` array in `content/content.js`.
-- The first resume is also used for the "Download CV" button on the home page.
+- Set `available: true` for each CV once its PDF is present; unavailable CVs are not shown as download links.
+- Available CVs are listed on the Resume page.
 
 ### Hide a project
 Set `show: false` on that project object.
@@ -48,6 +51,9 @@ Drag the whole project folder onto Netlify (site deploy → drag and drop). The 
 - `resume.html` — download button for each CV file
 - `404.html` — not found page
 - `styles.css` — all colours, sizes and spacing in CSS variables at the top
+- `DESIGN.md` — design tokens and reusable component examples
+- `design-preview.html` — visual guide to tokens, type, spacing, and components
+- `screenshots/` — design-preview captures at 375px, 768px, and 1280px
 - `site.js` — shared header/footer injection, content validation, page rendering
 - `content/content.js` — the single content file (`window.SITE`)
 - `images/.gitkeep` — image slots (covers, gallery, About photo, favicon, social preview)

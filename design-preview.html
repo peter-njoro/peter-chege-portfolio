@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Visual reference for the portfolio design system.">
+  <title>Design preview · Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="c-skip-link" href="#main">Skip to content</a>
+  <header class="c-header">
+    <a class="c-name" href="#">Style guide</a>
+    <nav aria-label="Preview navigation">
+      <ul class="c-menu">
+        <li><a href="#" aria-current="page">Preview</a></li>
+        <li><a href="#">Components</a></li>
+        <li><a href="#">Tokens</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="c-style-guide">
+    <h1 class="c-page-title">Design system</h1>
+    <p class="c-style-guide__intro">A plain, readable interface built from a small set of black, white and gray tokens.</p>
+
+    <section class="c-style-guide__section">
+      <h2>Colours</h2>
+      <div class="c-swatch-grid">
+        <div class="c-swatch"><span class="c-swatch__sample c-swatch__sample--bg"></span><code>--bg</code> #fff</div>
+        <div class="c-swatch"><span class="c-swatch__sample c-swatch__sample--text"></span><code>--text</code> #111</div>
+        <div class="c-swatch"><span class="c-swatch__sample c-swatch__sample--text-2"></span><code>--text-2</code> #333</div>
+        <div class="c-swatch"><span class="c-swatch__sample c-swatch__sample--text-3"></span><code>--text-3</code> #555</div>
+        <div class="c-swatch"><span class="c-swatch__sample c-swatch__sample--line"></span><code>--line</code> #111</div>
+        <div class="c-swatch"><span class="c-swatch__sample c-swatch__sample--line-soft"></span><code>--line-soft</code> #ddd</div>
+        <div class="c-swatch"><span class="c-swatch__sample c-swatch__sample--surface"></span><code>--surface</code> #f6f6f6</div>
+      </div>
+    </section>
+
+    <section class="c-style-guide__section">
+      <h2>Type</h2>
+      <div class="c-type-list">
+        <div class="c-type-sample"><h1>Heading one</h1><small>40px desktop / 28px mobile</small></div>
+        <div class="c-type-sample"><h2>Heading two</h2><small>20px / bold</small></div>
+        <div class="c-type-sample"><h3>Heading three</h3><small>18px / bold</small></div>
+        <div class="c-type-sample"><p>Body text sample</p><small>16px / line-height 1.6</small></div>
+        <div class="c-type-sample"><small>Small text sample</small><br><small>14px</small></div>
+        <div class="c-type-sample"><span class="c-type-meta">Meta text sample</span><br><small>13px</small></div>
+      </div>
+    </section>
+
+    <section class="c-style-guide__section">
+      <h2>Spacing</h2>
+      <div class="c-spacing-list">
+        <div class="c-spacing-sample"><span class="c-spacing-sample__bar c-spacing-sample__bar--s1"></span><code>--s1 · 4px</code></div>
+        <div class="c-spacing-sample"><span class="c-spacing-sample__bar c-spacing-sample__bar--s2"></span><code>--s2 · 8px</code></div>
+        <div class="c-spacing-sample"><span class="c-spacing-sample__bar c-spacing-sample__bar--s3"></span><code>--s3 · 12px</code></div>
+        <div class="c-spacing-sample"><span class="c-spacing-sample__bar c-spacing-sample__bar--s4"></span><code>--s4 · 16px</code></div>
+        <div class="c-spacing-sample"><span class="c-spacing-sample__bar c-spacing-sample__bar--s5"></span><code>--s5 · 24px</code></div>
+        <div class="c-spacing-sample"><span class="c-spacing-sample__bar c-spacing-sample__bar--s6"></span><code>--s6 · 32px</code></div>
+        <div class="c-spacing-sample"><span class="c-spacing-sample__bar c-spacing-sample__bar--s7"></span><code>--s7 · 48px</code></div>
+        <div class="c-spacing-sample"><span class="c-spacing-sample__bar c-spacing-sample__bar--s8"></span><code>--s8 · 64px</code></div>
+      </div>
+    </section>
+
+    <section class="c-style-guide__section">
+      <h2>Header and links</h2>
+      <header class="c-header">
+        <a class="c-name" href="#">Site name</a>
+        <nav aria-label="Example navigation">
+          <ul class="c-menu">
+            <li><a href="#" aria-current="page">Current page</a></li>
+            <li><a class="is-hover" href="#">Menu hover</a></li>
+            <li><a class="is-focus" href="#">Menu focus</a></li>
+          </ul>
+        </nav>
+      </header>
+      <p class="c-style-guide__link-samples">
+        <a class="c-link" href="#">Default link</a>
+        <a class="c-link is-hover" href="#">Hover link</a>
+        <a class="c-link is-focus" href="#">Focus link</a>
+      </p>
+    </section>
+
+    <section class="c-style-guide__section">
+      <h2>Buttons</h2>
+      <div class="c-style-guide__buttons">
+        <a class="c-btn c-btn--primary" href="#">Primary</a>
+        <a class="c-btn c-btn--primary is-hover" href="#">Primary hover</a>
+        <a class="c-btn c-btn--primary is-focus" href="#">Primary focus</a>
+        <a class="c-btn" href="#">Secondary</a>
+        <a class="c-btn is-hover" href="#">Secondary hover</a>
+        <a class="c-btn is-focus" href="#">Secondary focus</a>
+        <button class="c-btn" type="button" disabled>Disabled</button>
+      </div>
+    </section>
+
+    <section class="c-style-guide__section">
+      <h2>Section heading</h2>
+      <h2 class="c-section-title">Section title</h2>
+      <p>Short summary goes here.</p>
+    </section>
+
+    <section class="c-style-guide__section">
+      <h2>Project cards</h2>
+      <div class="c-card-grid c-card-grid--style-guide">
+        <article class="c-card c-project-card">
+          <div class="c-card__image">
+            <div class="c-img c-img--cover c-style-guide__filled-image" role="img" aria-label="Filled project image example">Filled image · 16:9</div>
+          </div>
+          <div class="c-card__heading"><h3>Project title</h3></div>
+          <p class="c-card__summary">Short summary goes here.</p>
+          <p class="c-card__tags">Python, Docker, Data analysis</p>
+          <a class="c-card__details c-link" href="#">View details</a>
+        </article>
+
+        <article class="c-card c-project-card c-card--progress">
+          <div class="c-card__image">
+            <div class="c-img c-img--cover c-img--empty" role="img" aria-label="Image goes here (16:9)">Image goes here (16:9)</div>
+          </div>
+          <div class="c-card__heading"><h3>A long project title that wraps naturally across several lines</h3><span class="c-card__status c-card__status--progress">In progress</span></div>
+          <p class="c-card__summary">Short summary goes here.</p>
+          <p class="c-card__tags">Computer vision, Python</p>
+          <a class="c-card__details c-link is-focus" href="#">View details</a>
+        </article>
+
+        <article class="c-card c-project-card c-card--no-image is-hover">
+          <div class="c-card__heading"><h3>Project title without an image</h3></div>
+          <p class="c-card__summary">Short summary goes here.</p>
+          <p class="c-card__tags">JavaScript, User interface</p>
+          <a class="c-card__details c-link" href="#">View details</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="c-style-guide__section">
+      <h2>Metric callout (sample values)</h2>
+      <div class="c-demo-grid">
+        <div class="c-metric"><span class="c-metric__value">24</span><span class="c-metric__caption">Metric caption goes here</span></div>
+        <div class="c-metric"><span class="c-metric__value">2</span><span class="c-metric__caption">Sessions tested</span></div>
+      </div>
+    </section>
+
+    <section class="c-style-guide__section">
+      <h2>About box</h2>
+      <div class="c-box">
+        <div class="c-box__image"><div class="c-img c-img--avatar c-img--empty" role="img" aria-label="Image goes here (1:1)">Image goes here (1:1)</div></div>
+        <p>Short summary goes here. This box can hold an optional square photo beside readable text. On a narrow screen the image sits above the copy.</p>
+      </div>
+    </section>
+
+    <section class="c-style-guide__section">
+      <h2>Image slots</h2>
+      <div class="c-demo-grid">
+        <div>
+          <div class="c-img c-img--cover c-style-guide__filled-image" role="img" aria-label="Filled image example">Filled image · 16:9</div>
+          <p class="c-gallery__caption">Filled image example</p>
+        </div>
+        <div>
+          <div class="c-img c-img--cover c-img--empty" role="img" aria-label="Image goes here (16:9)">Image goes here (16:9)</div>
+          <p class="c-gallery__caption">Empty placeholder, same dimensions</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="c-style-guide__section">
+      <h2>Gallery</h2>
+      <div class="c-gallery">
+        <figure>
+          <div class="c-img c-img--gallery c-img--empty" role="img" aria-label="Gallery image example">Image goes here</div>
+          <figcaption class="c-gallery__caption">Gallery caption goes here</figcaption>
+        </figure>
+        <figure>
+          <div class="c-img c-img--gallery c-img--empty" role="img" aria-label="Gallery image example">Image goes here</div>
+          <figcaption class="c-gallery__caption">Second gallery caption</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="c-style-guide__section">
+      <h2>Embed frame</h2>
+      <div class="c-embed c-embed--empty">Embedded project goes here (16:9)</div>
+    </section>
+
+    <section class="c-style-guide__section">
+      <h2>Footer</h2>
+      <footer class="c-footer">
+        <nav class="c-footer__links" aria-label="Footer links">
+          <a class="c-link" href="#">GitHub</a>
+          <a class="c-link" href="#">LinkedIn</a>
+          <a class="c-link" href="#">Email</a>
+        </nav>
+      </footer>
+    </section>
+
+    <section class="c-style-guide__section">
+      <h2>Skip link, focused state</h2>
+      <a class="c-skip-link is-focus" href="#main">Skip to content</a>
+    </section>
+  </main>
+</body>
+</html>
